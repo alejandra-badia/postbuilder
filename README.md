@@ -95,11 +95,11 @@ The application simulates a simplified CMS publishing experience:
 
 ## Screenshots
 
-|      Initial   |       Form    |
+|  Initial Load  | Form Section  |
 |----------------|---------------|
 | ![](docs/screenshots/postbuilder-initial.png) | ![](docs/screenshots/postbuilder-form.png) |
 
-| Form Input            | JSON         |
+|     Filled Form       |Generated JSON|
 |-----------------------|--------------|
 | ![](docs/screenshots/postbuilder-forminput.png) | ![](docs/screenshots/postbuilder-json.png) |
 
@@ -158,6 +158,32 @@ Key principles:
 - AJAX (XMLHttpRequest for async submission) 
 
 --- 
+
+## Security Considerations
+This project includes several safeguards to ensure safe handling of user input and file uploads:
+
+### Input Handling & XSS Prevention
+•	User-generated content is rendered using safe DOM methods such as textContent to prevent script execution
+•	Avoids use of innerHTML for dynamic content where possible
+•	Input fields are sanitized and constrained using character limits
+
+### Slug Sanitization
+•	Slugs are normalized and restricted to alphanumeric characters and hyphens
+•	Prevents path traversal and malicious filename injection
+
+### File Upload Validation
+•	Accepts only specific file types (JPEG, PNG)
+•	Validates both MIME type and file extension
+•	Enforces file size limits
+•	Uploaded files are renamed using sanitized slugs to prevent execution of malicious filenames
+
+### Storage Protection
+•	Limits the number of generated JSON files to prevent abuse or storage overflow
+
+### Client + Server Validation
+•	Validation is implemented on both frontend and backend to ensure data integrity and prevent bypassing client-side restrictions
+
+---
 
 ## Purpose of the Project 
 PostBuilder demonstrates how modern content platforms structure user workflows for creating, validating, and publishing content. The project highlights how frontend applications can: 
