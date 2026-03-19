@@ -1,1 +1,194 @@
-# postbuilder
+# PostBuilder
+![Status](https://img.shields.io/badge/status-demo-blue) ![Architecture](https://img.shields.io/badge/architecture-frontend--driven-orange) ![Frontend](https://img.shields.io/badge/frontend-JavaScript-blue) ![Backend](https://img.shields.io/badge/backend-PHP-lightgrey) ![License](https://img.shields.io/badge/license-MIT-lightgrey) 
+
+
+Structured Content Workflow & JSON Publishing Simulator
+
+
+PostBuilder is a lightweight web application that simulates a modern content creation and publishing workflow similar to those used in CMS platforms. The application allows users to build structured blog content through a multi-step form interface, preview the content in real time, and generate a JSON payload representing the post. It also demonstrates validation workflows, asynchronous submission, and UI feedback patterns commonly found in product platforms. This project was developed as part of a technical portfolio to showcase frontend workflow design, structured content modeling, and CMS-style publishing experiences. 
+
+---
+
+## Table of Contents
+
+- [Live Demo](#live-demo) 
+- [Key Features](#key-features) 
+- [Application Architecture](#application-architecture) 
+- [Workflow Overview](#workflow-overview) 
+- [Form Sections](#form-sections)
+- [Screenshots](#screenshots)
+- [Live Preview](#live-preview) 
+- [Validation System](#validation-system) 
+- [JSON Output](#json-output) 
+- [UI Design System](#ui-design-system) 
+- [Technologies Used](#technologies-used) 
+- [Purpose of the Project](#purpose-of-the-project) 
+- [Project Status](#project-status) 
+- [Author](#author) 
+
+---
+
+## Live Demo
+https://postbuilder.smarterspec.tech/
+
+---
+
+## Key Features
+
+- Multi-step content creation workflow with sidebar navigation 
+- Real-time blog preview that updates as users type 
+- Structured JSON generation for API-style workflows 
+- Native form validation with custom UI handling 
+- Section-aware validation (auto-navigation to invalid fields) 
+- Asynchronous form submission with progress modal 
+- Copy and download JSON utilities 
+- Responsive layout for desktop and mobile 
+
+---
+
+## Application Architecture
+
+![Architecture Diagram](docs/architecture/architecture-diagram.png)
+
+PostBuilder follows a **frontend-driven architecture with a lightweight backend**. The architecture emphasizes UI state management, user feedback, and structured data generation.
+
+---
+
+## Workflow Overview
+The application simulates a simplified CMS publishing experience: 
+1. User navigates through form sections via sidebar
+2. Content is entered and preview updates in real time
+3. Validation ensures required fields are completed
+4. Form is submitted asynchronously
+5. Upload modal displays progress and status
+6. JSON payload is generated and displayed 
+
+---
+
+## Form Sections 
+### Post Details 
+- Title (auto-generates slug) 
+- Description - Content 
+
+### Author 
+- Name 
+- Role 
+- Bio 
+
+### SEO 
+- Meta Title 
+- Meta Description 
+
+### Tags 
+- Dynamic tag input system 
+- Tag pills UI 
+
+### Media 
+- Featured image upload 
+- Client-side preview 
+
+### Publish Settings 
+- Publish preference 
+- Optional scheduled date 
+
+---
+
+## Screenshots
+
+|      Initial   |       Form    |
+|----------------|---------------|
+| ![](docs/screenshots/postbuilder-initial.png) | ![](docs/screenshots/postbuilder-form.png) |
+
+| Form Input            | JSON         |
+|-----------------------|--------------|
+| ![](docs/screenshots/postbuilder-forminput.png) | ![](docs/screenshots/postbuilder-json.png) |
+
+---
+
+## Live Preview 
+The live preview updates instantly as users input content. It simulates a blog post card including: - title 
+- author 
+- description 
+- content 
+- tags 
+- publish date 
+- featured image 
+
+This demonstrates real-time DOM updates and product-style UI feedback. 
+
+---
+
+## Validation System 
+PostBuilder uses **native HTML5 validation enhanced with custom behavior**. Features include: 
+- required field validation 
+- character limits 
+- custom invalid event handling 
+Custom UX improvements: 
+- automatically navigates to the section containing invalid fields 
+- syncs sidebar active state 
+- scrolls to the relevant section 
+- focuses invalid inputs 
+- displays global error messaging
+
+---
+
+## JSON Output
+The application generates a structured JSON payload based on user input. Example: ```json { "title": "Post Title", "slug": "post-title", "description": "...", "content": "...", "tags": [], "author": { "name": "...", "role": "...", "bio": "..." }, "metaTitle": "...", "metaDescription": "...", "featuredImage": "...", "publishPreference": "...", "specificPublishDate": "..." } ``` 
+The JSON is displayed in a formatted preview panel after submission. 
+
+---
+
+## UI Design System
+
+PostBuilder uses a lightweight design system built with CSS variables. 
+Key principles: 
+- consistent spacing and layout 
+- card-based UI structure 
+- sidebar navigation with active states 
+- modal-based feedback system 
+- responsive design for smaller screens 
+
+--- 
+
+## Technologies Used
+- HTML 
+- CSS (custom design system with variables) 
+- JavaScript (vanilla, modular structure) 
+- PHP (JSON generation endpoint) 
+- AJAX (XMLHttpRequest for async submission) 
+
+--- 
+
+## Purpose of the Project 
+PostBuilder demonstrates how modern content platforms structure user workflows for creating, validating, and publishing content. The project highlights how frontend applications can: 
+- manage multi-step user input 
+- provide real-time feedback
+- generate structured data for APIs 
+- simulate publishing workflows without full backend systems 
+
+--- 
+
+## Project Status 
+PostBuilder is an actively evolving portfolio project focused on frontend product workflows and structured content systems. 
+Current version includes: 
+- multi-step form navigation 
+- live preview system 
+- validation with guided UX 
+- JSON generation and display
+- asynchronous submission with modal feedback 
+
+Future improvements may include: 
+- database persistence 
+- CMS API integration 
+- markdown editor support 
+- autosave controls 
+- multi-user workflows 
+
+---
+
+## Author
+
+Portfolio project created by Alejandra Badia
+
+
+
