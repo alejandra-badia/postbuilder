@@ -14,7 +14,7 @@ PostBuilder is a lightweight web application that simulates a modern content cre
 - [Live Demo](#live-demo) 
 - [Key Features](#key-features) 
 - [Application Architecture](#application-architecture)
-- [Project Management Approach](#project-management-approach)
+- [Product Management Approach](#product-management-approach)
 - [Workflow Overview](#workflow-overview) 
 - [Form Sections](#form-sections)
 - [Screenshots](#screenshots)
@@ -55,7 +55,7 @@ PostBuilder follows a **frontend-driven architecture with a lightweight backend*
 
 ---
 
-## Project Management Approach
+## Product Management Approach
 PostBuilder was developed using a structured Agile (Scrum-based) workflow to simulate real-world product development practices.
 
 ### Backlog & Planning
