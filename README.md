@@ -14,6 +14,7 @@ PostBuilder is a lightweight web application that simulates a modern content cre
 - [Live Demo](#live-demo) 
 - [Key Features](#key-features) 
 - [Application Architecture](#application-architecture)
+- [Project Management Approach](#project-management-approach)
 - [Workflow Overview](#workflow-overview) 
 - [Form Sections](#form-sections)
 - [Screenshots](#screenshots)
