@@ -13,7 +13,7 @@ PostBuilder is a lightweight web application that simulates a modern content cre
 
 - [Live Demo](#live-demo) 
 - [Key Features](#key-features) 
-- [Application Architecture](#application-architecture) 
+- [Application Architecture](#application-architecture)
 - [Workflow Overview](#workflow-overview) 
 - [Form Sections](#form-sections)
 - [Screenshots](#screenshots)
@@ -51,6 +51,39 @@ https://postbuilder.smarterspec.tech/
 ![Architecture Diagram](docs/architecture/architecture-diagram.png)
 
 PostBuilder follows a **frontend-driven architecture with a lightweight backend**. The architecture emphasizes UI state management, user feedback, and structured data generation.
+
+---
+
+## Project Management Approach
+PostBuilder was developed using a structured Agile (Scrum-based) workflow to simulate real-world product development practices.
+
+### Backlog & Planning
+- Created and managed a structured backlog in Jira
+- Defined features (stories), bug fixes, and acceptance criteria
+- Estimated work using story points
+- Prioritized MVP features to ensure focused delivery
+
+### Sprint Execution
+- Organized development into 2 sprints:
+  - Sprint 1: Core content workflow (UI, preview, validation)
+  - Sprint 2: Backend processing, JSON output, and data handling
+- Managed dependencies between frontend state, validation, and backend logic
+- Maintained clear separation between frontend and backend responsibilities
+
+### Scope & Prioritization
+- Focused on delivering a functional MVP first
+- Deferred non-critical features to reduce scope creep
+- Balanced user experience improvements with backend reliability
+
+### Problem Solving
+- Identified and resolved a tag persistence issue affecting data consistency
+- Ensured alignment between frontend state and backend processing
+- Conducted end-to-end validation of submission and JSON output workflows
+
+### Outcome
+- Delivered a complete MVP in 2 sprints
+- Achieved full completion of planned sprint scope
+- Established a structured content model for API-driven workflows
 
 ---
 
