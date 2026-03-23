@@ -49,7 +49,7 @@ https://postbuilder.smarterspec.tech/
 
 ## Application Architecture
 
-![Architecture Diagram](docs/architecture/architecture-diagram.png)
+![Architecture Diagram](docs/03_architecture/architecture-diagram.png)
 
 PostBuilder follows a **frontend-driven architecture with a lightweight backend**. The architecture emphasizes UI state management, user feedback, and structured data generation.
 
@@ -131,11 +131,11 @@ The application simulates a simplified CMS publishing experience:
 
 |  Initial Load  | Form Section  |
 |----------------|---------------|
-| ![](docs/screenshots/postbuilder-initial.png) | ![](docs/screenshots/postbuilder-form.png) |
+| ![](docs/04_screenshots/postbuilder-initial.png) | ![](docs/04_screenshots/postbuilder-form.png) |
 
 |     Filled Form       |Generated JSON|
 |-----------------------|--------------|
-| ![](docs/screenshots/postbuilder-forminput.png) | ![](docs/screenshots/postbuilder-json.png) |
+| ![](docs/04_screenshots/postbuilder-forminput.png) | ![](docs/04_screenshots/postbuilder-json.png) |
 
 ---
 
