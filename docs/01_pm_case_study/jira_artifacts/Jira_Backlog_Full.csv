@@ -1,0 +1,38 @@
+﻿Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Priority,Description,Watchers,Sprint,Custom field (Story Points),Parent key,Parent summary,Status Category
+Content Creation Workflow,PB-2,10006,Epic,To Do,PB,PostBuilder Portfolio,software,Alejandra Badia,High,Multi-step form experience with sidebar navigation and structured input flow.,Alejandra Badia,,,,,To Do
+Live Preview System,PB-3,10007,Epic,To Do,PB,PostBuilder Portfolio,software,Alejandra Badia,High,"Real-time DOM-based preview updates for all inputs (title, content, tags, author info, image).",Alejandra Badia,,,,,To Do
+Validation & UX Feedback,PB-4,10008,Epic,To Do,PB,PostBuilder Portfolio,software,Alejandra Badia,High,"Native HTML validation with custom behaviors, section-aware invalid field handling, guided UX feedback.",Alejandra Badia,,,,,To Do
+Media Upload Handling,PB-5,10009,Epic,To Do,PB,PostBuilder Portfolio,software,Alejandra Badia,Medium,"Featured image upload with client-side preview, file type & size validation, autosave restoration.",Alejandra Badia,,,,,To Do
+Backend Processing & JSON Generation,PB-6,10010,Epic,To Do,PB,PostBuilder Portfolio,software,Alejandra Badia,High,"Structured JSON creation on submit, slug sanitization, tag processing, error handling, file storage.",Alejandra Badia,,,,,To Do
+Multi-step content creation workflow with sidebar navigation,PB-1,10005,Story,To Do,PB,PostBuilder Portfolio,software,Alejandra Badia,High,"Acceptance Criteria: 
+
+* Users can navigate between form sections
+* Active section highlighted",Alejandra Badia,PB Sprint 1,8,PB-2,Content Creation Workflow,To Do
+Native validation,PB-9,10013,Story,To Do,PB,PostBuilder Portfolio,software,Alejandra Badia,High,"Acceptance Criteria:
+
+* Required fields enforced
+* Character limits validated",Alejandra Badia,PB Sprint 1,1,PB-4,Validation & UX Feedback,To Do
+Publish settings with optional scheduled date,PB-12,10016,Story,To Do,PB,PostBuilder Portfolio,software,Alejandra Badia,Medium,"Acceptance Criteria:
+
+* Users can select ‘anytime’, ‘ASAP’, or specific date
+* Preview reflects choice",Alejandra Badia,PB Sprint 1,2,PB-2,Content Creation Workflow,To Do
+Real-time live preview of blog post,PB-7,10011,Story,To Do,PB,PostBuilder Portfolio,software,Alejandra Badia,High,,Alejandra Badia,PB Sprint 1,5,PB-3,Live Preview System,To Do
+Custom validation,PB-14,10018,Story,To Do,PB,PostBuilder Portfolio,software,Alejandra Badia,High,,Alejandra Badia,PB Sprint 1,5,PB-4,Validation & UX Feedback,To Do
+Structured JSON generation on submit,PB-8,10012,Story,To Do,PB,PostBuilder Portfolio,software,Alejandra Badia,High,,Alejandra Badia,PB Sprint 2,8,PB-6,Backend Processing & JSON Generation,To Do
+Backend validations,PB-15,10019,Story,To Do,PB,PostBuilder Portfolio,software,Alejandra Badia,Medium,"Acceptance Criteria:
+
+* File size, type, mime validated, filename sanitized/validated
+* Character limits validated
+* Slug sanitized/validated",Alejandra Badia,PB Sprint 2,5,PB-6,Backend Processing & JSON Generation,To Do
+File upload with client-side preview,PB-10,10014,Story,To Do,PB,PostBuilder Portfolio,software,Alejandra Badia,Medium,"Acceptance Criteria:
+
+* Only JPEG/PNG accepted
+* Size limits enforced
+* Preview displays before submission",Alejandra Badia,PB Sprint 2,3,PB-5,Media Upload Handling,To Do
+Clear form functionality,PB-13,10017,Story,To Do,PB,PostBuilder Portfolio,software,Alejandra Badia,Low,"Acceptance Criteria:
+
+* Clears all inputs, preview, character counts, tags, and uploaded image",Alejandra Badia,PB Sprint 2,3,PB-2,Content Creation Workflow,To Do
+Tags not saved after page refresh (bug fix),PB-11,10015,Story,To Do,PB,PostBuilder Portfolio,software,Alejandra Badia,Medium,"Acceptance Criteria:
+
+* Hidden tagsField updated on submit
+* Tags restored from autosave",Alejandra Badia,PB Sprint 2,3,PB-6,Backend Processing & JSON Generation,To Do

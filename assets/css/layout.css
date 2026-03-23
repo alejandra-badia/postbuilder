@@ -1,0 +1,106 @@
+/* =========================================
+   APP LAYOUT
+========================================= */
+.app-layout{
+    display:grid;
+    grid-template-columns:120px 1fr;
+    min-height:100vh;
+}
+
+
+/* =========================================
+   MAIN APP AREA
+========================================= */
+.app-main{
+    display:flex;
+    flex-direction:column;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+.app-header{
+  background:var(--color-surface);
+  border-bottom:1px solid var(--color-border);
+}
+
+.header-container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:var(--space-nano) var(--space-page) var(--space-nano) var(--space-page);
+}
+
+.logo{
+  width:200px;
+}
+
+.builder{
+  color:var(--color-primary);
+}
+
+.demo{
+  font-size:var(--fs-sm);
+  color:var(--color-text-muted);
+}
+
+
+/* =========================================
+   WORKSPACE
+========================================= */
+.workspace{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:var(--space-page);
+    padding:0px var(--space-page) var(--space-page) var(--space-page);
+}
+
+
+/* =========================================
+   EDITOR
+========================================= */
+.editor{
+    background:var(--color-surface);
+    border:1px solid var(--color-border);
+    border-radius:var(--radius-lg);
+    padding:var(--space-section);
+}
+
+
+/* =========================================
+   PREVIEW
+========================================= */
+.preview{
+    background:var(--color-surface);
+    border:1px solid var(--color-border);
+    border-radius:var(--radius-lg);
+    padding:var(--space-section);
+        word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* =========================================
+   JSON Section
+========================================= */
+.json-section{
+    margin:var(--space-page);
+    background:var(--color-surface);
+    border:1px solid var(--color-border);
+    border-radius:var(--radius-lg);
+    padding:var(--space-section);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+.app-footer{
+  margin-top:auto;
+  padding:var(--space-micro);
+  border-top:1px solid var(--color-border);
+  background:var(--color-surface);
+  text-align:center;
+  font-size:var(--fs-sm);
+  color:var(--color-text-muted);
+}
