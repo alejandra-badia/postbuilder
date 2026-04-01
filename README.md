@@ -14,7 +14,7 @@ PostBuilder is a lightweight application that demonstrates how structured conten
 - [Live Demo](#live-demo) 
 - [Key Features](#key-features) 
 - [Application Architecture](#application-architecture)
-- [Product Development & Delivery](#Product-development-&-delivery)
+- [Product Development & Delivery](#product-development-&-delivery)
 - [Workflow Overview](#workflow-overview) 
 - [Form Sections](#form-sections)
 - [Screenshots](#screenshots)
