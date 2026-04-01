@@ -14,7 +14,7 @@ PostBuilder is a lightweight application that demonstrates how structured conten
 - [Live Demo](#live-demo) 
 - [Key Features](#key-features) 
 - [Application Architecture](#application-architecture)
-- [Product Development & Delivery](#product-development-&-delivery)
+- [Product Development & Delivery](#product-development-and-delivery)
 - [Workflow Overview](#workflow-overview) 
 - [Form Sections](#form-sections)
 - [Screenshots](#screenshots)
@@ -58,7 +58,7 @@ The system enforces a clear contract between frontend input state and backend-ge
 
 ---
 
-## Product Development & Delivery
+## Product Development and Delivery
 PostBuilder was developed using a structured Agile (Scrum-based) workflow to simulate real-world product development practices.
 
 ### Backlog & Planning
