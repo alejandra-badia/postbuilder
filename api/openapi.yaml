@@ -1,0 +1,43 @@
+openapi: 3.0.0
+info:
+  title: PostBuilder Content API
+  description: API for generating structured, schema-validated JSON content posts.
+  version: 1.0.0
+paths:
+  /postbuilder.php:
+    post:
+      summary: Create a structured post
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  maxLength: 150
+                slug:
+                  type: string
+                  description: URL-friendly identifier
+                featuredImage:
+                  type: string
+                  format: binary
+                  description: Max 2MB (jpg, jpeg, png)
+                authorName:
+                  type: string
+                  maxLength: 50
+                metaDescription:
+                  type: string
+                  maxLength: 160
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: array
+                    items:
+                      type: object
